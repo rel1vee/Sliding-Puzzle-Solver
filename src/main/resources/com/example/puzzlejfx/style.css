@@ -1,0 +1,21 @@
+.alert {
+    -fx-background-color: #aef88f; /* Warna latar belakang */
+}
+
+.dialog-pane {
+    -fx-border-color: #4CAF50; /* Warna border */
+}
+
+.alert-header {
+    -fx-background-color: #ffffff; /* Warna header */
+}
+
+.alert-content {
+    -fx-font-size: 24px; /* Ukuran font */
+    -fx-text-fill: #ffffff; /* Warna teks */
+}
+
+.button {
+    -fx-background-color: #ffffff; /* Warna tombol */
+    -fx-text-fill: #000000; /* Warna teks tombol */
+}

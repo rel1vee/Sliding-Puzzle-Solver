@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: #bad1d7;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.puzzlejfx.Controller">
+    <HBox layoutY="29.0" prefHeight="400.0" prefWidth="400.0">
+        <GridPane fx:id="startState" alignment="CENTER" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #bad1d7;">
+            <Button onAction="#handleButtonClick" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #175b80;" text="1" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                <font>
+                    <Font name="TektonPro-Bold" size="36.0" />
+                </font>
+                <GridPane.margin>
+                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                </GridPane.margin>
+            </Button>
+            <Button onAction="#handleButtonClick" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #175b80;" text="2" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <font>
+                    <Font name="TektonPro-Bold" size="36.0" />
+                </font>
+                <GridPane.margin>
+                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                </GridPane.margin>
+            </Button>
+            <Button onAction="#handleButtonClick" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #175b80;" text="3" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                <font>
+                    <Font name="TektonPro-Bold" size="36.0" />
+                </font>
+                <GridPane.margin>
+                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                </GridPane.margin>
+            </Button>
+            <Button onAction="#handleButtonClick" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #175b80;" text="4" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                <font>
+                    <Font name="TektonPro-Bold" size="36.0" />
+                </font>
+                <GridPane.margin>
+                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                </GridPane.margin>
+            </Button>
+            <Button onAction="#handleButtonClick" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #175b80;" text="5" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <font>
+                    <Font name="TektonPro-Bold" size="36.0" />
+                </font>
+                <GridPane.margin>
+                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                </GridPane.margin>
+            </Button>
+            <Button onAction="#handleButtonClick" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #175b80;" text="6" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <font>
+                    <Font name="TektonPro-Bold" size="36.0" />
+                </font>
+                <GridPane.margin>
+                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                </GridPane.margin>
+            </Button>
+            <Button onAction="#handleButtonClick" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #175b80;" text="7" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                <font>
+                    <Font name="TektonPro-Bold" size="36.0" />
+                </font>
+                <GridPane.margin>
+                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                </GridPane.margin>
+            </Button>
+            <Button onAction="#handleButtonClick" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #175b80;" text="8" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <font>
+                    <Font name="TektonPro-Bold" size="36.0" />
+                </font>
+                <GridPane.margin>
+                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                </GridPane.margin>
+            </Button>
+            <Button onAction="#handleButtonClick" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" text="0" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                </GridPane.margin>
+                <font>
+                    <Font name="TektonPro-Bold" size="36.0" />
+                </font>
+            </Button>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints> <!-- Empty space for the puzzle -->
+        </GridPane>
+    </HBox>
+
+   <Button alignment="CENTER" layoutX="160.0" layoutY="429.0" mnemonicParsing="false" onAction="#handleShuffle" prefHeight="40.0" prefWidth="80.0" style="-fx-background-radius: 25;" text="Shuffle" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold Italic" size="14.0" />
+      </font>
+   </Button>
+
+    <ScrollPane layoutX="400.0" layoutY="29.0" prefHeight="470.0" prefWidth="150.0" style="-fx-background-color: #bad1d7;">
+        <TextArea fx:id="solutionArea" prefHeight="470.0" prefWidth="150.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Trebuchet MS" size="12.0" />
+         </font></TextArea>
+    </ScrollPane>
+
+    <MenuBar prefHeight="30.0" prefWidth="550.0" style="-fx-font-size: 14;">
+        <Menu mnemonicParsing="false" text="Hint">
+            <MenuItem mnemonicParsing="false" onAction="#handleHintBFS" text="BFS" />
+            <MenuItem mnemonicParsing="false" onAction="#handleHintAStar" text="A*" />
+        </Menu>
+    </MenuBar>
+</AnchorPane>
